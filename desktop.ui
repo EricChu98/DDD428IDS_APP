@@ -1,0 +1,4733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>false</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1070</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1070</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DDD428 IDS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.48187, fx:0.5001, fy:0.506182, stop:1 rgba(255, 255, 255, 0));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1085</width>
+      <height>640</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1085</width>
+      <height>640</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1090</width>
+      <height>645</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/bg-img/Design/imgLog.png);</string>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="home">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgHome.png);</string>
+     </property>
+     <widget class="QGraphicsView" name="MainLogo">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>40</y>
+        <width>271</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoMain.png);
+border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.48187, fx:0.5001, fy:0.506182, stop:1 rgba(255, 255, 255, 0));</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MainTitleStatus">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>350</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>状态良好</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="filterBGpic">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>430</y>
+        <width>144</width>
+        <height>147</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconStatusBoard.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="capBGpic">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>430</y>
+        <width>144</width>
+        <height>147</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconStatusBoard.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="alarmBGpic">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>430</y>
+        <width>144</width>
+        <height>147</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconStatusBoard.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cap">
+      <property name="geometry">
+       <rect>
+        <x>454</x>
+        <y>440</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>捕获器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="filter">
+      <property name="geometry">
+       <rect>
+        <x>655</x>
+        <y>440</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>过滤器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="alarm_2">
+      <property name="geometry">
+       <rect>
+        <x>849</x>
+        <y>440</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>警报数量</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="capStatus">
+      <property name="geometry">
+       <rect>
+        <x>447</x>
+        <y>490</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>运行中</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="filterStatus">
+      <property name="geometry">
+       <rect>
+        <x>648</x>
+        <y>490</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>运行中</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="alarmNum">
+      <property name="geometry">
+       <rect>
+        <x>846</x>
+        <y>490</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QFrame" name="HomeMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkHomeToAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkHomeToSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkHomeToLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkHomeToMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkHomeToAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <zorder>HomeMenu</zorder>
+     <zorder>MainLogo</zorder>
+     <zorder>MainTitleStatus</zorder>
+     <zorder>filterBGpic</zorder>
+     <zorder>capBGpic</zorder>
+     <zorder>alarmBGpic</zorder>
+     <zorder>cap</zorder>
+     <zorder>filter</zorder>
+     <zorder>alarm_2</zorder>
+     <zorder>capStatus</zorder>
+     <zorder>filterStatus</zorder>
+     <zorder>alarmNum</zorder>
+    </widget>
+    <widget class="QWidget" name="alarm">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgAlarm.png);</string>
+     </property>
+     <widget class="QFrame" name="AlarmMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog_5">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAlarmToMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAlarmToHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAlarmToSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAlarmToLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAlarmToAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="titleAlarm">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>警   报</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleAlarm">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>491</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>当IDS捕获的网络数据流特征触发IP地址黑名单规则和（或）Snort拦截规则时，IDS将弹出通知提醒您。警报事件将被记录在这里，并且您可以根据IDS提供的威胁摘要信息去追溯进程。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="logoAlarm">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>30</y>
+        <width>174</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoAlarm.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="lineAlarm">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>700</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ClearAllAlarm">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>560</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="text">
+       <string>全部清除</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="listAlarm">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>270</y>
+        <width>741</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+     </widget>
+     <widget class="QTableView" name="TitleListAlarm">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>240</y>
+        <width>741</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mode">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgMode.png);</string>
+     </property>
+     <widget class="QFrame" name="ModeMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog_6">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings_9">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkModeToHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkModeToSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkModeToLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkModeToAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkModeToAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGraphicsView" name="logoMode">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>30</y>
+        <width>174</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoMode.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="lineMode">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>700</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>491</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>IDS有全局模式和白名单模式。全局模式是默认模式，捕获所有进程的网络数据流；白名单模式可以被您手动开启，选择您信任的软件进程，IDS会将其加入白名单，从而忽略经过这些软件进程的网络数据流。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="titleMode">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>模   式</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="whitelistModeOnOff">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>250</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>启用白名单模式</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>250</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>捕获器工作模式：</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabMode">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>761</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(163, 166, 166);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="global_Mode">
+       <attribute name="title">
+        <string>全局模式</string>
+       </attribute>
+       <widget class="QLabel" name="titleMode_2">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>130</y>
+          <width>351</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 16pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+        </property>
+        <property name="text">
+         <string>所有数据包都会被IDS捕获分析。</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="appleCheckMode">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>127</y>
+          <width>33</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/AppleCheck.png);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="whitelist_Mode">
+       <attribute name="title">
+        <string>白名单模式</string>
+       </attribute>
+       <widget class="QLabel" name="subtitleMode_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>511</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+        </property>
+        <property name="text">
+         <string>请选择软件进程以加入白名单。IDS会忽略您选择的进程。为了安全起见，请谨慎选择：</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="Line" name="lineMode_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>700</width>
+          <height>1</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QListView" name="listProc">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>281</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(178, 178, 178);
+font: pt &quot;PingFang SC&quot;;
+border-image: url(:/icon/Design/iconSelection.png);
+color: rgb(254, 166, 101);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="movement">
+         <enum>QListView::Free</enum>
+        </property>
+       </widget>
+       <widget class="QListView" name="listWhite">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>80</y>
+          <width>271</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(178, 178, 178);
+font: pt &quot;PingFang SC&quot;;
+border-image: url(:/icon/Design/iconSelection.png);
+color: rgb(254, 166, 101);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="jinchengliebiao">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+        </property>
+        <property name="text">
+         <string>进程列表</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="baimingdanliebiao">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>50</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+        </property>
+        <property name="text">
+         <string>白名单列表</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ToRight">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>160</y>
+          <width>101</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>&gt;&gt;&gt;拖动&gt;&gt;&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="apply">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>270</y>
+          <width>98</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+border-image: url(:/blank/Design/blank.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>使用此设置</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="display">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>270</y>
+          <width>101</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(254, 181, 16);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="log">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgLog.png);</string>
+     </property>
+     <widget class="QFrame" name="LogMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog_7">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings_10">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkLogToMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkLogToHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkLogToAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkLogToSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkLogToAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="subtitleLog">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>491</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>日志是IDS功能审计的重要依据。包含两个选项卡：一是供您查询网络流量获取状态；一是提供操作日志记录，您可以查看IDS的每个模块何时被打开或关闭。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="logoLog">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>30</y>
+        <width>174</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoLog.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_Log">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>700</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="titleLog">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>日   志</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabLog">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>250</y>
+        <width>761</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(163, 166, 166);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="cap_log">
+       <attribute name="title">
+        <string>网络数据流</string>
+       </attribute>
+       <widget class="QListWidget" name="list_cap_log">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>741</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(191, 191, 191);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="movement">
+         <enum>QListView::Free</enum>
+        </property>
+        <property name="isWrapping" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clearAllCapLog">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>290</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/blank/Design/blank.png);</string>
+        </property>
+        <property name="text">
+         <string>全部清除</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="operate_log">
+       <attribute name="title">
+        <string>IDS操作日志</string>
+       </attribute>
+       <widget class="QPushButton" name="clearAllOperateLog">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>290</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/blank/Design/blank.png);</string>
+        </property>
+        <property name="text">
+         <string>全部清除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="operate_log_export">
+        <property name="geometry">
+         <rect>
+          <x>547</x>
+          <y>295</y>
+          <width>90</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icon/Design/ViseButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(90, 90, 90);
+border-image: url(:/blank/Design/blank.png);</string>
+        </property>
+        <property name="text">
+         <string>前往导出</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="list_operate_log">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>741</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-color: rgb(191, 191, 191);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="movement">
+         <enum>QListView::Free</enum>
+        </property>
+        <property name="isWrapping" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="settings">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgSettings.png);</string>
+     </property>
+     <widget class="QFrame" name="SettingsMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog_8">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout_9">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings_11">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkSettingsToMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkSettingsToHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkSettingsToAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkSettingsToLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkSettingsToAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGraphicsView" name="logoSettings">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>30</y>
+        <width>174</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoSettings.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleSettingsSettings">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>491</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>控制IDS捕获器、过滤器、警报器的开关，导出日志，更新IP规则等操作。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="Line" name="line_Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>700</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="titleSettings">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>设   置</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_4Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>260</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>捕获器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="capOnOffSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>260</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>启用捕获器</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ipOnOffSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>300</y>
+        <width>411</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>启用Emerging Block IPs - 由Scudo Firewall提供的远程IP黑名单列表</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_5Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>300</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>过滤器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="snortOnOffSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>330</y>
+        <width>411</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>启用Snort Rules - 由Snort提供的防火墙规则库</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_6Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>370</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>警报器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="alarmOnOffSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>370</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>启用警报（系统通知）</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleSettings_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>370</y>
+        <width>491</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="text">
+       <string>如果您关闭警报，您将不会收到系统通知。但警报事件依旧会显示在警报页面。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_7Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>450</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>导出日志</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_8Settings">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>490</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>更新</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exportButtonSettings">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>445</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="text">
+       <string>导出操作日志</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="exportAddrSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>450</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font: 13pt &quot;PingFang SC&quot;;</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleMode_9Settings">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>450</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>到位置：</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateButtonSettings">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>486</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/MainButton.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="text">
+       <string>更新IP规则</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="updateMsgSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>490</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 13pt &quot;PingFang SC&quot;;
+color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="about">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/bg-img/Design/imgAbout.png);</string>
+     </property>
+     <widget class="QFrame" name="AboutMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>251</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGraphicsView" name="iconAlarm_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAlarm.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconMode_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>180</y>
+         <width>50</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-image: url(:/icon/Design/iconMode.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconDashboard_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>55</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconStatus.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconSettings_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>48</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSettings.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconAbout_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>450</y>
+         <width>54</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconAbout.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="iconLog_3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>250</y>
+         <width>44</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconLog.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>-2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ruqinjiance_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>入侵检测</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="xitong_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 14pt &quot;PingFang SC&quot;;
+color: rgb(204, 204, 204);</string>
+       </property>
+       <property name="text">
+        <string>系统</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAbout_4">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>关   于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtMode_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>模   式</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtAlarm_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>警   报</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtLog_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>日   志</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtDashboard_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>仪表盘</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="txtSettings_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 18pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+       </property>
+       <property name="text">
+        <string>设   置</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="indicatorAbout">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/Design/iconSelection.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAboutToMode">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAboutToHome">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAboutToAlarm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAboutToSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="linkAboutToLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/blank/Design/blank.png);
+border-image: url(:/blank/Design/blank.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="titleAbout">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 24pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>关于我们</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="subtitleAbout">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>DDD428 IDS 是一个实验项目，由杭州电子科技大学网络空间安全学院的DDD428团队设计开发。</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="logoAbout">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>30</y>
+        <width>174</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/Design/logoAbout.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="p1">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>213</y>
+        <width>39</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconOthers.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_3">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>220</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>周   正 / 17271236</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_4">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>240</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>程序设计 / 负责软件过滤器模块的开发</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_5">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>290</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>朱光熠 / 17271237</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="p2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>283</y>
+        <width>39</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconOthers.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_6">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>310</y>
+        <width>461</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>程序设计、用户体验设计 / 负责代码整合，自主原创设计并实现了用户界面和交互</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_7">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>360</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>朱微凡 / 17271238</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="p3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>353</y>
+        <width>39</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconOthers.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_8">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>程序设计 / 负责软件警报模块的开发</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_9">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>430</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>邹平平 / 17271239</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="p4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>423</y>
+        <width>39</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/icon/Design/iconOthers.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_10">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>450</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 12pt &quot;PingFang SC&quot;;
+color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string>程序设计 / 负责软件捕获器模块的开发</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtabout_11">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>560</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/blank/Design/blank.png);
+font: 10pt &quot;PingFang SC&quot;;
+color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="text">
+       <string>联系我们：朱光熠（组长） Tel：+86 135 8877 4680             Email：gy.chu@qq.com  </string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

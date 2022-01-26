@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="bg-img">
+    <file>Design/imgSettings.png</file>
+    <file>Design/imgMode.png</file>
+    <file>Design/imgLog.png</file>
+    <file>Design/imgHome.png</file>
+    <file>Design/imgAlarm.png</file>
+    <file>Design/imgAbout.png</file>
+  </qresource>
+  <qresource prefix="blank">
+    <file>Design/blank.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>Design/logoSettings.png</file>
+    <file>Design/logoMode.png</file>
+    <file>Design/logoLog.png</file>
+    <file>Design/logoMain.png</file>
+    <file>Design/logoAlarm.png</file>
+    <file>Design/logoAbout.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>Design/MainButton.png</file>
+    <file>Design/ViseButton.png</file>
+    <file>Design/AppleCheck.png</file>
+    <file>Design/iconStatus.png</file>
+    <file>Design/iconSettings.png</file>
+    <file>Design/iconSelection.png</file>
+    <file>Design/iconStatusBoard.png</file>
+    <file>Design/iconOthers.png</file>
+    <file>Design/iconMode.png</file>
+    <file>Design/iconLog.png</file>
+    <file>Design/iconAlarm.png</file>
+    <file>Design/iconAbout.png</file>
+  </qresource>
+</RCC>
